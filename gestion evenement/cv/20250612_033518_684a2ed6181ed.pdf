@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Facture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .invoice-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color:rgb(248, 91, 204);
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+        #profile{
+    width: 70px;
+    height: 70px;
+    border-radius:100%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <h1>Facture</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Photo</th>
+                    <th>Quantité</th>
+                    <th>Prix Unitaire</th>
+                    <th>Prix Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                                    <tr>
+                        <td>4</td>
+                        <td><img src="../assets/images/products/4.jpg " id="profile"></td>
+                        <td>6</td>
+                        <td>200.00 FCFA</td>
+                        <td>1,200.00 FCFA</td>
+                    </tr>
+                                </tbody>
+        </table>
+        <div class="total">
+            Total: 1,200.00 €        </div>
+        <div class="footer">
+            Merci pour votre achat !
+        </div>
+    </div>
+</body>
+</html>
